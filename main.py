@@ -47,15 +47,28 @@ print('〓〓〓〓リスト〓〓〓〓')
 ##########################################################
 #リスト内の任意の値をランダムに取得
 import random
-L1=[1,2,3,4,5]
-print( random.choice(L1) )
+List1=[1,2,3,4,5]
+print( random.choice(List1) )
+# 範囲指定 と ＋結合
+MList = List1[1:3]+[11,12]
+print( MList )
+
+#ソート
+print("リストのソート")
+MList.sort(); print( MList )
 
 ##########################################################
 print('〓〓〓〓タプル〓〓〓〓')
 # ( ) で括って記述.必須でない.構造体 (struct) のよう
+#定義後の追加がデキない
 ##########################################################
 tuple1 = ('Keisuke', 37)
 print( tuple1)
 tuple2,tuple3=tuple1
 print( tuple2)
 print( tuple3)
+#インデックスでアクセス
+print( tuple1[1] )
+
+
+
